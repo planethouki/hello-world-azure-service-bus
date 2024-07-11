@@ -10,7 +10,7 @@ export default {
   methods: {
     async sendMessage() {
       try {
-        this.responseMessage = await fetch(`${import.meta.env.VITE_API_URL}/message`, {
+        this.responseMessage = await fetch(`${import.meta.env.VITE_API_URL}/api/message`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
