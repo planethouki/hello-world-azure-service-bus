@@ -21,7 +21,7 @@ app.http('message', {
 
     try {
       const message = {
-        body: reqBody.messageBody,
+        body: reqBody.message,
         applicationProperties: {
           customProperty: reqBody.customProperty
         }
